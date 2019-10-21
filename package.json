@@ -1,0 +1,25 @@
+{
+  "name": "projetweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhaouajihiba/ghibli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elhaouajihiba/ghibli/issues"
+  },
+  "homepage": "https://github.com/elhaouajihiba/ghibli#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemon": "^1.19.3"
+  }
+}
