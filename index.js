@@ -11,6 +11,14 @@ app.engine('hbs', hbs({
 }));
 app.set('view engine', 'hbs');
 
+app.get('/film', function (req, res) {
+  res.render("Chihiro.hbs", {
+    illustration : {
+      path: "photos/Chihiro6.jpeg"
+    }
+  });
+})
+
 app.get('/*', function (req, res) {
   res.render("PageWeb.hbs", {});
 })
