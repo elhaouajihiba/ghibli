@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const app = express();
+const movies=require("./movies.js");
 
 app.use(express.static('public'));
 
@@ -11,86 +12,20 @@ app.engine('hbs', hbs({
 }));
 app.set('view engine', 'hbs');
 
-app.get('/Miyazaki', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
-})
+app.get('/film/:name', function (req, res) {
+  let movieName = req.params.name;
 
-app.get('/Chihiro', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
-})
+  console.log(movies[movieName]);
 
-app.get('/Chateau', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
+  if (movies[movieName] == undefined) {
+    res.sendStatus(404);
+    return ;
+  }
+  res.render("movie.hbs", movies[movieName]);
 })
-
-app.get('/Totoro', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
-})
-
-app.get('/Mononoke', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
-})
-
-app.get('/Ponyo', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
-})
-
-app.get('/Terremer', function (req, res) {
-  res.render("ModelePage.hbs", {
-    illustration : {
-      path: "photos/Chihiro6.jpeg"
-    },
-    content : {
-      text : ["paragraphe1", "paragraphe2"]
-    }
-  });
-})
-
 
 app.get('/*', function (req, res) {
-  res.render("PageWeb.hbs", {});
+  res.render("pageweb.hbs", {});
 })
 
 app.listen(3000, function () {
