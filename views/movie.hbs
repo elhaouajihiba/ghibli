@@ -1,0 +1,22 @@
+
+  {{# if illustration}}
+    <section>
+      <div id="illustration">
+        <span>{{illustration.title}}</span>
+          <img src={{illustration.path}}>
+      </div>
+    </section>
+  {{/if}}
+
+  <section class="content">
+
+      {{# each content.text}}
+        <p class="textContent"> {{this}} </p>
+      {{/each}}
+
+  </section>
+
+
+  <section id="video">
+      <iframe width="50%" height="600" src="{{srcVideo}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
