@@ -1,22 +1,23 @@
 video {
-  position: fixed;
   left: 0;
   right: 0;
   top: 5vh;
   width:100vw;
-  z-index: -100;
+  z-index: -1;
   background: url(//Documents/ProjetWeb/chihiro.png) no-repeat;
   background-size: cover;
 }
 
 .background {
-  position: absolute;
+  position:fixed;
   top:0;
   left: 0;
   width:100%;
   height:100%;
+  z-index: -1;
+  opacity: 1;
 
-  opacity: 0;
+
 }
 @font-face {
   font-family: 'Calligraffitti';
@@ -24,7 +25,7 @@ video {
   font-weight: 400;
 
   src: local('Calligraffitti Regular'), local('Calligraffitti-Regular'), url(https://fonts.gstatic.com/s/calligraffitti/v11/46k2lbT3XjDVqJw3DCmCFjE0vkFeOZc.woff2) format('woff2');
- 
+
 }
 
 @font-face {
@@ -33,14 +34,30 @@ video {
   font-weight: 400;
 
   src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
- 
+
+}
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
 
 
-
 body{
- background-color: #FAEBD7;
+ background-color: #EED9C4;
+ position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 
@@ -49,20 +66,13 @@ body{
     background-size: cover;
     border: 50px;
 }
+
 #master{
-
   background-image: url("http://images2.fanpop.com/images/photos/3200000/Hayao-Miyazaki-castle-in-the-sky-3289788-400-335.jpg");
-
-
 }
-
-
 #chihioro{
    background-image: url("https://66.media.tumblr.com/a059616a28ec9d76c4658de80e0b66cb/tumblr_prt1p0NpC61urxp7v_540.jpg");
-
-  
 }
-
 #howl{
   background-image: url("https://i.pinimg.com/originals/5a/bf/c1/5abfc1cfbc52f8f8c5d52a3d1204c65f.jpg");
 }
@@ -72,77 +82,89 @@ body{
 }
 #mononoke{
   background-image: url("https://i.pinimg.com/originals/54/22/8b/54228b775ae64c65688215a931ff6949.jpg");
-  
 }
-
 #ponyo{
  background-image: url("https://scontent-yyz1-1.cdninstagram.com/vp/c92f50a9858f8397702aecd658f95299/5E222A29/t51.2885-15/e35/c115.0.270.270a/39578061_280972676068140_8599634345451068273_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=100");
 }
-
 #terremer{
  background-image: url("https://media2.fdncms.com/stranger/imager/u/original/25512126/filmrev-earthsea-570.jpg");
 }
 
-
-.navigation{
-   top:0;
-   z-index:1;
-   position:fixed;
-   left: 0px;
-   right: 0px;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end ;
-   margin: 0; 
-   background: #D2B48C;
-   align-self: flex-end;
-
+.tout{
+margin-top: 600px;
 }
 
-
-.navigation a {
-  text-decoration: none;
-  font-family: Calligraffitti, bold, serif;
-  font-weight: 600;
-  font-size: 20px;
-  display: block;
-  padding: 1em;
-  color: white;
-  text-align: center; 
-  padding: 10px;
- 
-
-}
-
-
-.navigation a:hover {
-  border-bottom: 1px solid grey ;
-}
-
-.new,.signin {
-  display: none;
-  font-family: Raleway, serif; 
-  font-weight: 300px; 
-  color:#BC8F8F;
-
-}
-
-#nodeco a:hover {
-  border-bottom: none;
-}
-
-
-div:hover + .new, div:hover + .signin {
-  display: block;
+.nav{
+  height: 100%; /*525px height vid */
+  width: 0;
+  font-family: Raleway, bold;
+  font-weight: bolder;
   position: fixed;
-  top: 50px;
-  width: 150px;
-  text-align: left;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: #EED9C4;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
 }
+
+.nav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.nav a:hover {
+  color: #f1f1f1;
+
+}
+
+.nav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor:pointer;
+  color: hsla(0, 100%, 70%, 0.3);
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+color: hsla(0, 100%, 30%, 0.3);
+font-size: 30px;
+cursor:pointer;
+}
+
+#main :hover{
+ color: white;
+}
+
+.bar{
+position: fixed;
+top: 0;
+
+}
+
+@media screen and (max-height: 300px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
 
 
 .center{
-  position:relative;
+
   top:60vw;
   display: flex;
   margin: auto;
@@ -152,18 +174,18 @@ div:hover + .new, div:hover + .signin {
 
 
 .inline{
-  position:relative;
+
   top:60vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   margin : 50px;
 
 }
 
 
 .block, .center {
-  margin-top: 50px;
+
   height: 400px;
   width: 450px;
   box-shadow: 5px 8px 20px  #888888;
@@ -177,6 +199,7 @@ div:hover + .new, div:hover + .signin {
    background:#FFF;
    opacity: 0;
    color: black;
+   margin: auto;
    padding-top: 100px;
    padding-left: 16px;
    font-weight:550;
@@ -186,32 +209,27 @@ div:hover + .new, div:hover + .signin {
 
 
 .block:hover .text , .center:hover .text {
-   width:434px;
-   height: 300px;
-   opacity:0.6;
+   width:inherit;
+   height: inherit;
+   opacity:0.8;
    color:#000000;
-   font-size:40px;
+   font-size:50px;
    border-radius: 1.5%;
    overflow: hidden;
-  
+
 }
 
-footer{
-  display: block;
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  height: 100px;
   width: 100%;
-  height: 2vh;
   background-color: #D2B48C;
   font-family: Raleway, bold;
-  font-weight: 400; 
+  font-weight: 400;
+border-top: 90px;
   text-align: center;
-  padding: 100px;
-  margin-top: 100px;
-  
- 
-  right:10vw;
-  border-top: 50px;
-  z-index:-1;
-
 }
-
-
