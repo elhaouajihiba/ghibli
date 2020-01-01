@@ -8,15 +8,28 @@
     </section>
   {{/if}}
 
-  <section class="content">
+  <div id="content1">
+    <div class="text1">
+      {{content1.text}}
+    </div>
+    <div class="image1">
+       <img src={{content1.images}} height="200px" width="auto">
+    </div>
+    
+  </div>
 
-      {{# each content.text}}
-        <p class="textContent"> {{this}} </p>
-      {{/each}}
+  <div id="content2">
+    <div class="text2">
+        {{content2.text}}
+    </div>
+    <div class="image2">
+       <img src={{content2.images}} height="200px" width="auto">
+    </div>
 
-  </section>
+  </div>
 
 
   <section id="video">
-      <iframe width="50%" height="600" src="{{srcVideo}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="50%" height="600" src={{video.srcVideo}} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
+

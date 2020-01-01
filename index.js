@@ -20,6 +20,9 @@ app.get('/login',function (req, res) {
   res.render("form.hbs", {});
 })
 
+app.get('/Miyazaki', function (req, res) {
+  res.render("Miyazaki.hbs", {});
+})
 
 app.get('/film/:name', function (req, res) {
   let movieName = req.params.name;

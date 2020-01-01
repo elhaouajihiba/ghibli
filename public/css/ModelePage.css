@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Maru Gothic';
-  src:url('./Police/font_1_honokamarugo_1.1.ttf');
+  font-family: 'MaruGothic';
+  src:url('/Police/font_1_honokamarugo_1.1.ttf');
 }
 
 @font-face {
   font-family: 'Moyko';
-  src:url('./Police/Moyko.ttf');
+  src:url('/Police/Moyko.ttf');
 }
 
 
@@ -13,8 +13,8 @@
   position: relative;
   overflow: hidden;
   line-height: 2em;
-  margin-top: 50px;
-  height: 50%;
+  margin-top: 80px;
+  height: 150px;
   }
 
   #illustration img {
@@ -37,8 +37,8 @@
   position: absolute;
   left: -100%;
   padding: 0 .25em;
-  color : white;
-  font-family: 'Maru Gothic';
+  color : #4b3314;
+  font-family: 'Moyko';
   transition: all .5s;
   z-index: 3;
   text-align: center;
@@ -48,12 +48,36 @@
 
   #illustration:hover span {
   left: 0em;
-  font-size: 40px;
-  font-family: 'Maru Gothic';
+  font-size: 60px;
+  font-family: 'Moyko';
   line-height: 60px;
   font-weight: bold;
   }
 
 #video {
-  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
+
+#content1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px 30px 50px 30px;
+}
+
+
+#content2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  margin: 50px 30px 50px 30px;
+}
+
+.text1, .text2 {
+  text-align: center;
+  margin-right: 10px;
+}
+
