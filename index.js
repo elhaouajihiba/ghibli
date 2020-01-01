@@ -12,6 +12,15 @@ app.engine('hbs', hbs({
 }));
 app.set('view engine', 'hbs');
 
+app.get('/Home', function (req, res) {
+  res.render("PageWeb.hbs", {});
+})
+
+app.get('/login',function (req, res) {
+  res.render("form.hbs", {});
+})
+
+
 app.get('/film/:name', function (req, res) {
   let movieName = req.params.name;
 

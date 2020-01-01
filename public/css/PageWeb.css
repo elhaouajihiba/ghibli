@@ -1,22 +1,13 @@
-video {
-  left: 0;
-  right: 0;
-  top: 5vh;
-  width:100vw;
-  z-index: -1;
-  background: url(//Documents/ProjetWeb/chihiro.png) no-repeat;
-  background-size: cover;
-}
 
-.background {
-  position:fixed;
+
+.compilation {
   top:0;
   left: 0;
   width:100%;
   height:100%;
-  z-index: -1;
+  z-index: -100;
   opacity: 1;
-
+  margin-bottom: 0;
 
 }
 @font-face {
@@ -43,10 +34,8 @@ html {
   box-sizing: border-box;
 }
 
-
-
 body{
- background-color: #EED9C4;
+ background-color: #fcfae8;
  position: relative;
   margin: 0;
   padding-bottom: 6rem;
@@ -60,39 +49,13 @@ body{
   box-sizing: inherit;
 }
 
-
-
-.film {
-    background-size: cover;
-    border: 50px;
+.partie{
+  margin-bottom: 60px;
 }
 
-#master{
-  background-image: url("http://images2.fanpop.com/images/photos/3200000/Hayao-Miyazaki-castle-in-the-sky-3289788-400-335.jpg");
-}
-#chihioro{
-   background-image: url("https://66.media.tumblr.com/a059616a28ec9d76c4658de80e0b66cb/tumblr_prt1p0NpC61urxp7v_540.jpg");
-}
-#howl{
-  background-image: url("https://i.pinimg.com/originals/5a/bf/c1/5abfc1cfbc52f8f8c5d52a3d1204c65f.jpg");
-}
-
-#totoro{
-  background-image: url("https://p1.storage.canalblog.com/14/52/695982/50326979.jpg");
-}
-#mononoke{
-  background-image: url("https://i.pinimg.com/originals/54/22/8b/54228b775ae64c65688215a931ff6949.jpg");
-}
-#ponyo{
- background-image: url("https://scontent-yyz1-1.cdninstagram.com/vp/c92f50a9858f8397702aecd658f95299/5E222A29/t51.2885-15/e35/c115.0.270.270a/39578061_280972676068140_8599634345451068273_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_cat=100");
-}
-#terremer{
- background-image: url("https://media2.fdncms.com/stranger/imager/u/original/25512126/filmrev-earthsea-570.jpg");
-}
-
-.tout{
-margin-top: 600px;
-}
+/*.pagecontent{
+  margin-top:70%; /*NEVER CHANGE IT
+}*/
 
 .nav{
   height: 100%; /*525px height vid */
@@ -117,7 +80,7 @@ margin-top: 600px;
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  transition:.5s ease;
 
 }
 
@@ -133,7 +96,7 @@ margin-top: 600px;
   font-size: 36px;
   margin-left: 50px;
   cursor:pointer;
-  color: hsla(0, 100%, 70%, 0.3);
+  color: hsl(0, 59%, 40%,0.7);
 }
 
 
@@ -161,62 +124,101 @@ top: 0;
 }
 
 
+h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight:700;
+  font-family: Calligraffitti, bolder;
+  color:  hsl(0, 59%, 40%,0.7);
+  background-color: white;
+}
 
-
-.center{
-
-  top:60vw;
-  display: flex;
-  margin: auto;
-  margin-bottom: 60px;
-
+.maitre{
+  padding-top:60px;
+  top: 0;
+  background-color: white;
+  padding-bottom: 60px;
 }
 
 
-.inline{
+.center{
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
-  top:60vw;
+.miyazaki{
+  float: right;
+  margin-right: 13.8%;
+  z-index: 1;
+  height: 400px;
+  width: 450px;
+  box-shadow:  1px 1px 10px #888888;
+  background-color: white;
+}
+
+.intro{
+  display: block;
+  margin-left: 15%;
+  padding: 70px 20px;
+  width: 450px;
+  height: 400px;
+  font-family: Raleway, bold;
+  background-color:#7BA05B; /* green */
+  color : white;
+  font-size: 20px;
+  text-align: justify;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+
+.two_movies{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin : 50px;
-
 }
 
-
-.block, .center {
-
+.film {
   height: 400px;
   width: 450px;
-  box-shadow: 5px 8px 20px  #888888;
-  border-radius: 1.5%;
+  box-shadow:  1px 1px 10px #888888;
+}
 
+  .block {
+    text-decoration: none;
+    height: 400px;
+    width: 450px;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 
 
 .text{
+  display: block;
+  text-align: center;
+  position: absolute;
+  line-height: 400px;
+  top: 0;
+  left:0;
    background:#FFF;
    opacity: 0;
    color: black;
-   margin: auto;
-   padding-top: 100px;
-   padding-left: 16px;
    font-weight:550;
+   font-size:50px;
+   overflow: hidden;
    font-family: Calligraffitti, bold, serif;
 }
 
 
 
-.block:hover .text , .center:hover .text {
-   width:inherit;
-   height: inherit;
+.block:hover .text {
+   width:100%;
+   height: 100%;
    opacity:0.8;
-   color:#000000;
-   font-size:50px;
-   border-radius: 1.5%;
-   overflow: hidden;
-
 }
 
 footer {
@@ -227,9 +229,20 @@ footer {
   padding: 1rem;
   height: 100px;
   width: 100%;
-  background-color: #D2B48C;
+  background-color:  #e2bf9c;
   font-family: Raleway, bold;
   font-weight: 400;
 border-top: 90px;
   text-align: center;
 }
+
+/*landscape
+@media screen and (max-width: 1060px) {
+  #primary{width:67%;}
+  #secondary { width:30%; margin-left:3%;}
+}
+/*portrait
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}*/

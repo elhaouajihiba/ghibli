@@ -29,62 +29,60 @@ html {
 }
 
 body {
-  background-color: #EED9C4;
+  background-color:#fcfae8;
   font-family:  Calligraffitti, bold;
 }
 
-a {
-  text-decoration:none;
-  color : #8D90A1;
-  transition:.5s ease;
-  &:hover {
-    color:#ACACE6;
-  }
-}
 
 .form {
-  background:hsla(0, 100%, 30%, 0.3);
-  padding: 40px;
-  max-width:600px;
+ background: #e4bfb4;
+  padding: 20px;
+  max-width:500px;
   margin:40px auto;
+  margin-bottom: 100px;
   border-radius:4px;
   box-shadow: 0 5px 40px 5px  #888888;
 }
 
 
 .tab-group {
-  list-style:none;
-  padding:0;
-  margin:0 0 60px 0;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
+    list-style:none;
+    padding:0;
+    margin:0 0 40px 0;
   }
-
-li a {
-    display: inline-block;
-    text-decoration: none;
-    padding:15px;
-    background-color : hsla(0, 100%, 70%, 0.3);
-    color:white;
-    font-size:200px;
-    float:left;
-    width:100%;
-    text-align:center;
-    cursor:pointer;
-    transition:.5s ease;
-    &:hover {
-      background-color:#ACACE6;
-      color:white;
+.tab-group:after {
+      content: "";
+      display: table;
+      clear: both;
     }
-  }
 
-  .active a {
-    background:#8D90A1;
-    color:white;
-  }
+
+  .tab a{
+      display: inline-block;
+      text-decoration: none;
+      padding:10px;
+      border-color: white;
+      border-width: thin;
+      background:#e4bfb4;
+      color:white;
+      font-size:45px;
+      float:left;
+      width:50%;
+      text-align:center;
+      transition:.5s ease;
+    }
+.tab a:hover{
+  background:hsl(0, 59%, 40%, 0.3)	;
+  color: white;
 }
+
+
+.active a {
+        background-color: hsl(0, 59%, 40%, 0.4);
+        color:white;
+ }
+
+
 
 .tab-content > div:last-child {
   display:none;
@@ -108,7 +106,7 @@ label {
   font-size:22px;
   .req {
   	margin:2px;
-  	color:#8D90A1;
+  	color:hsl(0, 59%, 40%, 0.4);
   }
 }
 
@@ -133,18 +131,20 @@ input, textarea {
   padding:5px 10px;
   background:none;
   background-image:none;
-  border:1px solid gray;
+  border-width:1px ;
+  border-color: hsl(0, 59%, 40%, 0.4);
   color:white;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
-  &:focus {
-		outline:0;
-		border-color:#8D90A1;
-  }
 }
+input:focus  , textarea:focus {
+		outline:0;
+		border-color:hsl(0, 59%, 40%, 0.4);
+  }
+
 
 textarea {
-  border:2px solid grey;
+  border:2px hsl(0, 59%, 40%, 0.4);
   resize: vertical;
 }
 
@@ -179,14 +179,15 @@ top-row {
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.1em;
-  background:#8D90A1;
+  background:hsl(0, 59%, 40%, 0.4);
   color: white;
   transition:all.5s ease;
   -webkit-appearance: none;
-  &:hover, &:focus {
-    background-color:#ACACE6;
-  }
 }
+  .button:hover, .button:focus {
+    background-color:hsl(0, 59%, 40%, 0.3);
+  }
+
 
 .button-block {
   display:block;
