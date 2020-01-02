@@ -28,18 +28,14 @@ html {
 	overflow-y: scroll;
 }
 
-body {
-  background-color:#fcfae8;
-  font-family:  Calligraffitti, bold;
-}
 
 
 .form {
- background: #e4bfb4;
+ background: #faf1ea;
   padding: 20px;
   max-width:500px;
   margin:40px auto;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   border-radius:4px;
   box-shadow: 0 5px 40px 5px  #888888;
 }
@@ -61,27 +57,27 @@ body {
       display: inline-block;
       text-decoration: none;
       padding:10px;
-      border-color: white;
       border-width: thin;
-      background:#e4bfb4;
-      color:white;
+      background: #faf1ea;
+      color: rgb(33, 18, 18);
+      font-family:  Calligraffitti, bold;
       font-size:45px;
+      letter-spacing:.005em;
       float:left;
       width:50%;
       text-align:center;
       transition:.5s ease;
     }
 .tab a:hover{
-  background:hsl(0, 59%, 40%, 0.3)	;
+  background:rgb(183, 123, 123);
   color: white;
 }
 
 
 .active a {
-        background-color: hsl(0, 59%, 40%, 0.4);
-        color:white;
+  background-color: rgb(33, 18, 18);
+  color:white;
  }
-
 
 
 .tab-content > div:last-child {
@@ -90,61 +86,58 @@ body {
 
 h1 {
   text-align:center;
-  color:white;
+  font-family: Raleway;
+  color:rgb(33, 18, 18);
+  font-size: 30px;
   font-weight:300;
-  margin:0 0 40px;
+  margin:0 0 30px;
 }
 
 label {
   position:absolute;
-  transform:translateY(6px);
   left:13px;
+  font-family: Raleway;
   color:black;
   transition:all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
-  font-size:22px;
+  font-size:25px;
   .req {
   	margin:2px;
-  	color:hsl(0, 59%, 40%, 0.4);
+  	color: rgb(148, 81, 81);
   }
 }
 
 label.active {
-  transform:translateY(50px);
+  transform:translateY(-30px);
   left:2px;
-  font-size:14px;
-  .req {
-    opacity:0;
-  }
+  font-size:20px;
 }
 
 label.highlight {
-	color:white;
+	color: #faf1ea;
 }
 
 input, textarea {
-  font-size:22px;
+  font-size:25px;
   display:block;
   width:100%;
   height:100%;
-  padding:5px 10px;
-  background:none;
-  background-image:none;
+  padding:7px 10px;
   border-width:1px ;
-  border-color: hsl(0, 59%, 40%, 0.4);
-  color:white;
-  border-radius:0;
+  background-color:#faf1ea;
+  border-color:  rgb(148, 81, 81);
+  color: rgb(148, 81, 81);
   transition:border-color .25s ease, box-shadow .25s ease;
 }
 input:focus  , textarea:focus {
 		outline:0;
-		border-color:hsl(0, 59%, 40%, 0.4);
+		border-color: rgb(148, 81, 81);
   }
 
 
 textarea {
-  border:2px hsl(0, 59%, 40%, 0.4);
+  border:2px  rgb(148, 81, 81);
   resize: vertical;
 }
 
@@ -173,19 +166,17 @@ top-row {
 .button {
   border:0;
   outline:none;
-  border-radius:0;
   padding:15px 0;
-  font-size:2rem;
-  font-weight:600;
-  text-transform:uppercase;
+  font-family:  Calligraffitti, bold;
+  font-size:45px;
   letter-spacing:.1em;
-  background:hsl(0, 59%, 40%, 0.4);
+  background:	rgb(33, 18, 18) ;
   color: white;
   transition:all.5s ease;
   -webkit-appearance: none;
 }
   .button:hover, .button:focus {
-    background-color:hsl(0, 59%, 40%, 0.3);
+    background-color:rgb(148, 81, 81);
   }
 
 
