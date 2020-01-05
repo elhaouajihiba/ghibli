@@ -1,4 +1,4 @@
-AOS.init();
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("menu").style.marginLeft = "250px";
@@ -21,3 +21,4 @@ $(window).scroll(function() {
     }
   });
 });
+AOS.init();
