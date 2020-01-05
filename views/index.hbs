@@ -2,34 +2,37 @@
 <html>
  <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="/css/movie.css"/>
+   <link rel="stylesheet" href="/css/PageWeb.css" />
+   <link rel="stylesheet" href="/css/ModelePage.css"/>
     <link rel="stylesheet" href="/css/form.css" />
-    <link rel="stylesheet" href="/css/PageWeb.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
    <title>Ghibli</title>
  </head>
  <body>
-   <script>
-   AOS.init();
-   </script>
+
+   <div id="secondary">
+     <div class="bar">
+        <div id="main" >
+      <div onclick="openNav()">&#9776; </div>
+
+      </div>
+     </div>
+
+       <div id="mySidenav" class="nav">
+
+
+         <a class="closebtn" onclick="closeNav()">&times;</a>
+
+         <div><a href="/Home"> <img class="logo "src="/photos/logo2.png"></a></div>
+        <div ><a href="/login" target="_blank"> Connexion | Inscription  </a></div>
+         <span> <a href="#"> A propos </a> <a href="#"> Vos commentaires </a></span>
+
+
+       </div>
+</div>
 
    {{{ body }}}
 
-        <div class="bar">
-           <div id="menu" >
-         <div onclick="openNav()">&#9776; </div>
-         </div>
-
-          <div id="mySidenav" class="nav">
-            <a class="closebtn" onclick="closeNav()">&times;</a>
-
-            <div><a href="/Home"> <img class="logo "src="/photos/logo2.png"></a></div>
-           <div ><a href="/login" target="_blank"> Connexion | Inscription  </a></div>
-            <span> <a href="#"> A propos </a> <a href="#"> Vos commentaires </a></span>
-          </div>
-    </div>
    <footer>
    © 2019 Studio Ghibli. All rights reserved
   </footer>
