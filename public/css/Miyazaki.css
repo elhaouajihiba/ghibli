@@ -1,0 +1,58 @@
+.master{
+  margin: 40px 40px 700px  70px;
+  text-decoration: none;
+}
+
+.illus{
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.titre{
+  position: absolute;
+  top:270px;
+  left: 713px;
+  background-color:#876246;
+  color:white;
+  padding: 10px;
+  font-size: 4vw;
+}
+
+.contenue1{
+  display: block;
+  position:absolute;
+  top: 500px;
+  left: 600px;
+  background:#CBCBC3 ;
+  font-size: 20px;
+  width: 500px;
+  height: auto;
+  color: black;
+  z-index: 1;
+  padding: 10px ;
+  padding-bottom: 20px;
+  min-width: inherit;
+  min-height: inherit;
+}
+
+.contenue2{
+  display: block;
+  position:absolute;
+  float: left;
+  top: 810px;
+  left: 180px;
+  background: #0E0E16 ;
+  font-size: 20px;
+  width: 500px;
+  height: auto;
+  color: #CBCBC3;
+  z-index: 1;
+  padding: 10px;
+}
+
+.contenue{
+  position: absolute;
+  top: 52px;
+  left: 0;
+}

@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const app = express();
-const movies=require("./movies.js");
+const movies = require("./movies.js");
 
 app.use(express.static('public'));
 
@@ -13,7 +13,7 @@ app.engine('hbs', hbs({
 app.set('view engine', 'hbs');
 
 app.get('/Home', function (req, res) {
-  res.render("PageWeb.hbs", {});
+  res.render("pageweb.hbs", {});
 })
 
 app.get('/login',function (req, res) {
@@ -33,7 +33,7 @@ app.get('/film/:name', function (req, res) {
     res.sendStatus(404);
     return ;
   }
-  res.render("movie.hbs", movies[movieName]);
+  res.render("movies.hbs", movies[movieName]);
 })
 
 app.get('/*', function (req, res) {
