@@ -28,14 +28,18 @@ html {
 	overflow-y: scroll;
 }
 
+body {
+  background-color:#fcfae8;
+  font-family:  Calligraffitti, bold;
+}
 
 
 .form {
- background: #faf1ea;
+ background: #e4bfb4;
   padding: 20px;
   max-width:500px;
   margin:40px auto;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   border-radius:4px;
   box-shadow: 0 5px 40px 5px  #888888;
 }
@@ -57,27 +61,27 @@ html {
       display: inline-block;
       text-decoration: none;
       padding:10px;
+      border-color: white;
       border-width: thin;
-      background: #faf1ea;
-      color: rgb(33, 18, 18);
-      font-family:  Calligraffitti, bold;
+      background:#e4bfb4;
+      color:white;
       font-size:45px;
-      letter-spacing:.005em;
       float:left;
       width:50%;
       text-align:center;
       transition:.5s ease;
     }
 .tab a:hover{
-  background:rgb(183, 123, 123);
+  background:hsl(0, 59%, 40%, 0.3)	;
   color: white;
 }
 
 
 .active a {
-  background-color: rgb(33, 18, 18);
-  color:white;
+        background-color: hsl(0, 59%, 40%, 0.4);
+        color:white;
  }
+
 
 
 .tab-content > div:last-child {
@@ -86,58 +90,61 @@ html {
 
 h1 {
   text-align:center;
-  font-family: Raleway;
-  color:rgb(33, 18, 18);
-  font-size: 30px;
+  color:white;
   font-weight:300;
-  margin:0 0 30px;
+  margin:0 0 40px;
 }
 
 label {
   position:absolute;
+  transform:translateY(6px);
   left:13px;
-  font-family: Raleway;
   color:black;
   transition:all 0.25s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: none;
-  font-size:25px;
+  font-size:22px;
   .req {
   	margin:2px;
-  	color: rgb(148, 81, 81);
+  	color:hsl(0, 59%, 40%, 0.4);
   }
 }
 
 label.active {
-  transform:translateY(-30px);
+  transform:translateY(50px);
   left:2px;
-  font-size:20px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
 }
 
 label.highlight {
-	color: #faf1ea;
+	color:white;
 }
 
 input, textarea {
-  font-size:25px;
+  font-size:22px;
   display:block;
   width:100%;
   height:100%;
-  padding:7px 10px;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
   border-width:1px ;
-  background-color:#faf1ea;
-  border-color:  rgb(148, 81, 81);
-  color: rgb(148, 81, 81);
+  border-color: hsl(0, 59%, 40%, 0.4);
+  color:white;
+  border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
 }
 input:focus  , textarea:focus {
 		outline:0;
-		border-color: rgb(148, 81, 81);
+		border-color:hsl(0, 59%, 40%, 0.4);
   }
 
 
 textarea {
-  border:2px  rgb(148, 81, 81);
+  border:2px hsl(0, 59%, 40%, 0.4);
   resize: vertical;
 }
 
@@ -166,17 +173,19 @@ top-row {
 .button {
   border:0;
   outline:none;
+  border-radius:0;
   padding:15px 0;
-  font-family:  Calligraffitti, bold;
-  font-size:45px;
+  font-size:2rem;
+  font-weight:600;
+  text-transform:uppercase;
   letter-spacing:.1em;
-  background:	rgb(33, 18, 18) ;
+  background:hsl(0, 59%, 40%, 0.4);
   color: white;
   transition:all.5s ease;
   -webkit-appearance: none;
 }
   .button:hover, .button:focus {
-    background-color:rgb(148, 81, 81);
+    background-color:hsl(0, 59%, 40%, 0.3);
   }
 
 
