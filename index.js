@@ -15,6 +15,12 @@ app.set('view engine', 'hbs');
 app.get('/Home', function (req, res) {
   res.render("pageweb.hbs", {});
 })
+app.get('/galerie', function (req, res) {
+  res.render("galerie.hbs", {});
+})
+app.get('/film/galerie', function (req, res) {
+  res.render("galerie.hbs", {});
+})
 
 app.get('/login',function (req, res) {
   res.render("form.hbs", {});
