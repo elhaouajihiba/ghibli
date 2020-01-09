@@ -18,6 +18,12 @@ app.get('/Home', function (req, res) {
 app.get('/galerie', function (req, res) {
   res.render("galerie.hbs", {});
 })
+app.get('/apropos', function (req, res) {
+  res.render("apropos.hbs", {});
+})
+app.get('/film/apropos', function (req, res) {
+  res.render("apropos.hbs", {});
+})
 app.get('/film/galerie', function (req, res) {
   res.render("galerie.hbs", {});
 })

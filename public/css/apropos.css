@@ -1,0 +1,153 @@
+.titrepage {
+    font-family:'Red Hat Display', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 50px;
+    background: hsla(0, 30%, 10%) ;
+    position: relative;
+    width:350px;
+    height:85px;
+    left: 150px;
+    top:110px;
+    z-index: 1;
+}
+.intropage {
+    padding: 40px 20px;
+    font-family: Raleway, bold;
+    word-wrap: break-word;
+    width: 450px;
+    height:180px;
+    color :hsla(0, 30%, 10%);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 50px;
+    background-color: rgb(248, 236, 236);
+    position:relative;
+    top:50px;
+    left:200px;
+}
+.accueil {
+    font-family:'Red Hat Display', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 50px;
+    background: hsla(0, 30%, 10%) ;
+    width:450px;
+    position: relative;
+    left: 150px;
+    top:-60px;
+    z-index: 1;
+}
+.menu {
+    font-family:'Red Hat Display', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 50px;
+    background: hsla(0, 30%, 10%) ;
+    position: relative;
+    width:220px;
+    left: 150px;
+    bottom:230px;
+    z-index: 1;
+}
+.remarques {
+    font-family:'Red Hat Display', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 50px;
+    background: hsla(0, 30%, 10%) ;
+    width:400px;
+    position: relative;
+    left: 40%;
+    bottom:230px;
+    z-index: 2;
+}
+.p1 {
+    padding: 40px 20px;
+    font-family: Raleway, bold;
+    word-wrap: break-word;
+    width: 450px;
+    height:160px;
+    color :hsla(0, 30%, 10%);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 20px;
+    background-color: rgba(209, 191, 191, 0.897);
+    position:relative;
+    top:-5px;
+    left:50%;
+}
+.p2 {
+    padding: 40px 20px;
+    font-family: Raleway, bold;
+    word-wrap: break-word;
+    width: 450px;
+    height:200px;
+    color :hsla(0, 30%, 10%);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 40px;
+    margin-top:70px;
+    background-color: rgb(248, 236, 236);
+    position:relative;
+    top:-150px;
+    left:200px;
+}
+.p3 {
+    padding: 40px 20px;
+    font-family: Raleway, bold;
+    word-wrap: break-word;
+    width: 450px;
+    height:230px;
+    color :hsla(0, 30%, 10%);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 20px;
+    background-color: rgba(209, 191, 191, 0.897);
+    position:relative;
+    top:-170px;
+    left:50%;
+}
+.p4 {
+    padding: 40px 20px;
+    font-family: Raleway, bold;
+    word-wrap: break-word;
+    width: 450px;
+    height:400px;
+    color :hsla(0, 30%, 10%);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 40px;
+    background-color: rgb(248, 236, 236);
+    position:relative;
+    bottom:290px;
+    left:200px;
+}
+.p5 {
+    padding: 40px 20px;
+    font-family: Raleway, bold;
+    word-wrap: break-word;
+    width: 450px;
+    height:220px;
+    color :hsla(0, 30%, 10%);
+    font-size: 20px;
+    text-align: left;
+    padding-top: 45px;
+    background-color: rgba(209, 191, 191, 0.897);
+    position:relative;
+    bottom:290px;
+    left:50%;
+    margin-bottom:20px;
+}
