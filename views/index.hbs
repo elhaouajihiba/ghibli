@@ -2,16 +2,19 @@
 <html>
  <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init({ duration: 1200, }) </script>
    <link rel="stylesheet" href="/css/pageweb.css" />
    <link rel="stylesheet" href="/css/movies.css"/>
    <link rel="stylesheet" href="/css/Miyazaki.css"/>
    <link rel="stylesheet" href="/css/form.css" />
    <link rel="stylesheet" href="/css/galerie.css" />
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-   <title>Ghibli</title>
+   <title>Studio Ghibli</title>
  </head>
- <body>
 
+ <body>
    {{{ body }}}
 
      <div class="bar">
@@ -23,8 +26,14 @@
        <div id="mySidenav" class="nav">
          <a class="closebtn" onclick="closeNav()">&times;</a>
            <div><a href="/Home"> <img class="logo "src="/photos/logo2.png"></a></div>
-           <div ><a href="/login" target="_blank"> Connexion | Inscription  </a></div>
-           <span>  <a href="galerie"> Galerie </a> <a href="#"> A propos </a></span>
+           <div ><a href="/login" target="_blank"> Connexion <br> Inscription  </a></div>
+           <div> <a href="#"> A propos </a> </div>
+          <div> <a href="galerie">Galerie </a></div>
+=======
+           <div ><a href="/login" target="_blank"> Connexion <br> Inscription  </a></div>
+           <div> <a href="#"> A propos </a> </div>
+          <div> <a href="galerie">Galerie </a></div>
+>>>>>>> Stashed changes
        </div>
 
 
@@ -32,9 +41,14 @@
    <footer>
    © 2019 Studio Ghibli. All rights reserved
   </footer>
+<<<<<<< Updated upstream
    <script src="/js/pageweb.js"></script>
    <script src="/js/form.js"></script>
    <script src="/js/galerie.js"></script>
+=======
+>>>>>>> Stashed changes
 
+   <script src="/js/form.js"></script>
+   <script src="/js/pageweb.js"></script>
  </body>
 </html>

@@ -1,14 +1,15 @@
+AOS.init();
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("menu").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "#EED9C4";
+  document.body.style.backgroundColor = "#E0D3BE";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("menu").style.marginLeft= "0";
-  document.body.style.backgroundColor = "#EED9C4";
+  document.body.style.backgroundColor = "#E0D3BE";
 }
 
 
@@ -21,4 +22,3 @@ $(window).scroll(function() {
     }
   });
 });
-AOS.init();
