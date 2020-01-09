@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
 
-
 .ban{
   position: relative;
 }
@@ -57,7 +56,8 @@ html {
 }
 
 body{
- background: #EED9C4;
+ background:#E0D3BE;
+ background-image: url("/video/compilation.mp4");
  position: relative;
  margin: 0;
  padding-bottom: 6rem;
@@ -76,21 +76,22 @@ body{
   padding-top: 100px;
   padding-bottom: 200px;
   position: relative;
-  background:	white;
+  background:#f9f6f2;
+
 }
 
 
 .nav{
   height: 100%; /*525px height vid */
   width: 0;
-  font-family: Raleway, bold;
+  font-family: 'Red Hat Display', sans-serif;
   font-weight: bolder;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   opacity: 0.8;
-  background-color: #EED9C4;
+  background-color:#E0D3BE;
   overflow-x: hidden;
   transition: 0.5s ease;
   padding-top: 60px;
@@ -130,7 +131,7 @@ body{
 #menu {
   transition: margin-left .5s ease;
   padding: 16px;
-  color:white ;
+  color:#f9f6f2 ;
   font-size: 30px;
   cursor:pointer;
   transition: .5s ease;
@@ -158,8 +159,6 @@ top: 0;
   margin-bottom: 250px;
   text-decoration: none;
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 .intro {
@@ -176,11 +175,11 @@ top: 0;
   font-family:'Red Hat Display', sans-serif;
   font-size: 60px;
   font-weight: bold;
-  color: white;
+  color: #f9f6f2;
   margin-left: 0;
   padding-left: 10px;
   padding-right: 50px;
-  background: hsla(0, 30%, 10%) ;
+  background: #7C7B57 ;
   position: absolute;
   left: 190px;
   top:10px;
@@ -213,11 +212,11 @@ h2{
   font-family: 'Red Hat Display', sans-serif;
   font-size: 60px;
   font-weight: bold;
-  color: white;
+  color:#f9f6f2;
   margin-bottom: 100px;
   padding-left: 10px;
   padding-right: 50px;
-  background: hsla(0, 30%, 10%) ;
+  background: #7C7B57;
   position: absolute;
   top: -95px;
   left: 200px;
@@ -285,20 +284,9 @@ footer {
   height: 150px;
   width: 100%;
   color: white;
-  background-color:rgb(33,18,18);
+  background-color:#7C7B57;
   font-family:'Red Hat Display', sans-serif;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
-
-/*landscape
-@media screen and (max-width: 1060px) {
-  #primary{width:67%;}
-  #secondary { width:30%; margin-left:3%;}
-}
-/*portrait
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}*/
