@@ -1,93 +1,80 @@
-*{
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+
+body {
+  padding: 30px 0;
+  position: relative;
 }
-#titre{
-  font-size: 50px;
-  font-family: sans-serif;
-  color:#613131;
-  
+#titre {
+  font-family:'Red Hat Display', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-left: 0;
+  padding-left: 10px;
+  padding-right: 50px;
+  background: hsla(0, 30%, 10%) ;
+  position: absolute;
+  left: 300px;
+  top:40px;
+  z-index: 2;
 }
-.wrapper {
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-bottom:20%;
-  width: 900px;
-  height:100vh;
-  padding: 10px;
-  border: 2px solid #613131;
-  background-color:rgba(216, 199, 179, 0.973);
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-gap: 5px;
-  column-gap: 10px;
-  row-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  
+.gallery {
+  width: 600px;
+  margin: auto;
+  margin-bottom: 20%;
+  margin-top:50px;
+  border-radius: 3px;
+  overflow: hidden;
+  //position: relative;
 }
-#img1 {
-  width:100%;
-  height:100%;
-  grid-column: 1 ;
-  grid-row: 1;
-}
-#img10 {
-  width:290%;
-  height:100%;
-  grid-column: 2;
-  grid-row: 1;
-}
-#img2 { 
-  width:200%;
-  height:200%;
-  grid-column:1;
-  grid-row: 2;
-}
-#img5 {
-  width:100%;
-  height:100%;
-  grid-column: 1;
-  grid-row: 4;
-}
-#img11 {
-  width:100%;
-  height:100%;
-  grid-column: 2;
-  grid-row: 4;
-}
-#img6 {
-  width:187%;
-  height:100%;
-  grid-column: 3;
-  grid-row: 2;
-}
-#img3 {
-  width:100%;
-  height:100%;
-  grid-column: 2;
-  grid-row: 3 ;
-}
-#img7 {
-  width:100%;
-  height:100%;
-  grid-column: 3;
-  grid-row: 4;
-}
-#img4 {
-  width:85%;
-  height:100%;
-  grid-column: 4;
-  grid-row: 3;
-}
-#img9 {
-  width:100%;
-  height:100%;
-  grid-column: 3;
-  grid-row: 3;
+.img-c {
+  width: 200px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
 }
 
-#img8 {
-  width:85%;
-  height:100%;
-  grid-column: 4;
-  grid-row: 4;
+.img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+  display: none;
+}
+
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active {
+  width: 70% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+  //transform: translateX(-50%);
+}
+
+.img-c.postactive {
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-c.active.positioned {
+  position:fixed;
+  left: 15% !important;
+  top: 0 !important;
+  transition-delay: 50ms;
 }
