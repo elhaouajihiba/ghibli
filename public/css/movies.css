@@ -20,7 +20,8 @@
   #illustration img {
   z-index: 0;
   position: relative;
-  width: 100%;  font-weight: bold;
+  width: 100%;  
+  font-weight: bold;
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
@@ -54,30 +55,102 @@
   font-weight: bold;
   }
 
-#video {
+.video {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+}
+
+.BandeAnnonce {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  background-color: #876246;
+  color: white;
+  margin-bottom: 80px;
+  margin-top: 450px;
+  text-align: center;
+}
+
+#bas{
+  margin-bottom: 30px;
 }
 
 #content1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 50px 30px 50px 30px;
+  margin-top: 150px;
+  margin-bottom: 50px ;
 }
-
 
 #content2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 50px;
-  margin: 50px 30px 50px 30px;
+  margin-bottom: 50px;
+  margin-top: 490px;
 }
 
-.text1, .text2 {
+
+.text1 {
   text-align: center;
-  margin-right: 10px;
+  background-color: #CBCBC3;
+  width: 600px;
+  height: 500px;
+  z-index: 2;
+  margin-left: 400px;
+  margin-bottom: 50px;
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  font-size: 25px;
 }
 
+.text2 {
+  text-align: center;
+  background-color: #CBCBC3;
+  width: 600px;
+  height: 500px;
+  z-index: 2;
+  margin-top: 50px;
+  position: relative;
+  padding: 5px 5px 5px 5px;
+  left: 400px;
+  font-size: 25px;
+}
+
+
+.image1 {
+  position: absolute;
+  z-index: 1;
+  left: 900px;
+  top : 800px;
+}
+
+.image2 {
+  position: absolute;
+  z-index: 1;
+  left: 900px;
+  top: 1790px;
+}
+
+.titre1 {
+  font-size: 100px;
+  background-color: #876246;
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: 100px;
+  padding-left: 160px;
+  left: 850px;
+  top: 310px;
+  color: white;
+  text-align: middle;
+}
+
+.titre2 {
+  font-size: 100px;
+  background-color: #876246;
+  position: absolute;
+  z-index: 1;
+  width: 600px;
+  height: 100px;
+  padding-right: 170px;
+  left: 850px;
+  top: 1300px;
+  color: white;
+  text-align: middle;
+}
