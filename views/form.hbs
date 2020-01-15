@@ -10,21 +10,14 @@
 
        <div id="signup">
           <h1>Bienvenue à Studio Ghibli </h1>
-          <form action="/" method="post">
+          <form action="/user/signup" method="post">
 
                     <div class="top-row">
                       <div class="field-wrap">
                         <label>
-                          Prénom<span class="req">*</span>
+                          Nom d'utilisateur<span class="req">*</span>
                         </label>
-                        <input type="text" required autocomplete="off" />
-                      </div>
-
-                      <div class="field-wrap">
-                        <label>
-                          Nom<span class="req">*</span>
-                        </label>
-                        <input type="text"required autocomplete="off"/>
+                        <input type="text" name="username" required autocomplete="off" />
                       </div>
                     </div>
 
@@ -32,39 +25,38 @@
                       <label>
                       E-mail<span class="req">*</span>
                       </label>
-                      <input type="email"required autocomplete="off"/>
+                      <input type="email" name="email" required autocomplete="off"/>
                     </div>
 
                     <div class="field-wrap">
                       <label>
                         Mot de passe<span class="req">*</span>
                       </label>
-                      <input type="password"required autocomplete="off"/>
+                      <input type="password" name="password" required autocomplete="off"/>
                     </div>
 
                     <button type="submit" class="button button-block"/>Inscription</button>
-
-                    </form>
+          </form>
 
                   </div>
 
                   <div id="login">
                            <h1> Rebonjour !</h1>
 
-                           <form action="/" method="post">
+                           <form action="/user/login" method="post">
 
                              <div class="field-wrap">
                              <label>
                                E-mail<span class="req">*</span>
                              </label>
-                             <input type="email"required autocomplete="off"/>
+                             <input type="email" name="email" required autocomplete="off"/>
                            </div>
 
                            <div class="field-wrap">
                              <label>
                                Mot de passe<span class="req">*</span>
                              </label>
-                             <input type="password"required autocomplete="off"/>
+                             <input type="password" name="password" required autocomplete="off"/>
                            </div>
 
 

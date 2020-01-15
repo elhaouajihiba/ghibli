@@ -1,0 +1,11 @@
+Mongodb : Database orientée documents (non relationnelle)
+
+Prk :
+ performances de machine permettent pas
+ pas d'installation bête (pas de connaissances, mais dans les projets d'apprentissage)
+
+
+ cluster: abstraction pour définir une ressource(service/ database/ outil..) partagée sur le Cloud
+
+Get users in database :
+Cluster -> Collections -> test -> users 

@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
+
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+
+}
+
+body{
+  width :100%;
+  height: fit-content;
+}
+
 .master{
-  margin: 40px 40px 700px  70px;
-  text-decoration: none;
+  margin: 40px 40px 1400px 70px;
+  width: fit-content;
 }
 
 .illus{
@@ -16,7 +32,9 @@
   background-color:#876246;
   color:white;
   padding: 10px;
-  font-size: 4vw;
+  font-size: 60px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: bold;
 }
 
 .contenue1{
@@ -26,14 +44,14 @@
   left: 600px;
   background:#CBCBC3 ;
   font-size: 20px;
+  font-family: Raleway, bold;
   width: 500px;
   height: auto;
   color: black;
   z-index: 1;
   padding: 10px ;
   padding-bottom: 20px;
-  min-width: inherit;
-  min-height: inherit;
+
 }
 
 .contenue2{
@@ -44,12 +62,49 @@
   left: 180px;
   background: #0E0E16 ;
   font-size: 20px;
+  font-family: Raleway, bold;
   width: 500px;
   height: auto;
   color: #CBCBC3;
   z-index: 1;
   padding: 10px;
 }
+.illus2{
+  position: absolute;
+  left: 775px;
+  top: 1000px;
+}
+.titre1{
+  position: absolute;
+  top:1113px;
+  left: 600px;
+  background-color:#876246;
+  color:white;
+  padding: 10px;
+  font-size: 60px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: bold;
+  z-index: 10;
+}
+
+
+.contenue3{
+  display: block;
+  position:absolute;
+  top: 1400px;
+  left:350px;
+  background:#CBCBC3 ;
+  font-size: 20px;
+  font-family: Raleway, bold;
+  width: 500px;
+  height: auto;
+  color: black;
+  z-index: 1;
+  padding: 10px ;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
 
 .contenue{
   position: absolute;
