@@ -1,1 +1,10 @@
 node_modules
+out/
+.idea
+**/*.iml
+
+#VSCode
+.vscode
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
