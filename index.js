@@ -1,15 +1,30 @@
 const express = require('express');
 const hbs = require('express-handlebars');
-const app = express();
 const movies = require("./movies.js");
+const bodyParser = require("body-parser");
+const user = require("./routes/user");
+const InitiateMongoServer = require("./config/db");
+
+// Initialiser le serveur Mongo
+InitiateMongoServer();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(bodyParser.json());
+
 
 app.use(express.static('public'));
+
+
 
 app.engine('hbs', hbs({
   extname: 'hbs',
   defaultLayout: 'index',
   layoutsDir: __dirname + '/views/',
 }));
+
 app.set('view engine', 'hbs');
 
 app.get('/Home', function (req, res) {
@@ -48,10 +63,11 @@ app.get('/film/:name', function (req, res) {
   res.render("movies.hbs", movies[movieName]);
 })
 
+app.use("/user", user);
+
 app.get('/*', function (req, res) {
   res.render("pageweb.hbs", {});
 })
-
-app.listen(3000, function () {
-  console.log('Application qui écoute sur le port 3000!');
-})
+app.listen(PORT, (req, res) => {
+  console.log(`Server Started at PORT ${PORT}`);
+});
