@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap');
 
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+
+}
+
+
 .ban{
   position: relative;
 }
@@ -28,25 +39,6 @@
 }
 #logo{
   margin-top: 1px;
-}
-
-
-/*@font-face {
-  font-family: 'Calligraffitti';
-  font-style: normal;
-  font-weight: 400;
-
-  src: local('Calligraffitti Regular'), local('Calligraffitti-Regular'), url(https://fonts.gstatic.com/s/calligraffitti/v11/46k2lbT3XjDVqJw3DCmCFjE0vkFeOZc.woff2) format('woff2');
-
-}*/
-
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
-
 }
 
 
@@ -82,7 +74,7 @@ body{
 
 
 .nav{
-  height: 100%; /*525px height vid */
+  height: 100%;
   width: 0;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: bolder;
@@ -91,7 +83,7 @@ body{
   top: 0;
   left: 0;
   opacity: 0.8;
-  background-color:#E0D3BE;
+  background-color: #E0D3BE;
   overflow-x: hidden;
   transition: 0.5s ease;
   padding-top: 60px;
@@ -168,7 +160,6 @@ top: 0;
   width: 900px;
   height: 400px;
   position: relative;
-  /* background-color:#7BA05B; green */
 }
 
 #maitre{
@@ -284,7 +275,7 @@ footer {
   height: 150px;
   width: 100%;
   color: white;
-  background-color:#7C7B57;
+  background-color:hsla(0, 30%, 10%);
   font-family:'Red Hat Display', sans-serif;
   font-size: 20px;
   font-weight: 400;
