@@ -1,12 +1,13 @@
 // Database Connection
 
 const mongoose = require("mongoose");
-const MONGOURI = "mongodb+srv://user_test:test@authentication-ppj72.mongodb.net/test?retryWrites=true&w=majority";
+const MONGOURI = "mongodb+srv://hiba:test@projet-zihbt.mongodb.net/test?retryWrites=true&w=majority";
 
 const InitiateMongoServer = async () => {
   try {
     await mongoose.connect(MONGOURI, {
       useNewUrlParser: false
+
     });
     console.log("Connected to DB !!");
   } catch (e) {

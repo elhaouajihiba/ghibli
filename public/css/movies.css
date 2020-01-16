@@ -98,7 +98,7 @@
   width: 600px;
   height: 600px;
   z-index: 2;
-  margin-left: 400px;
+  margin-left: 200px;
   margin-bottom: 50px;
   position: relative;
   padding: 10px 5px 5px 5px;
@@ -115,7 +115,7 @@
   margin-top: 20px;
   position: relative;
   padding: 10px 5px 5px 5px;
-  left: 400px;
+  left: 200px;
   font-size: 25px;
   font-family: 'Raleway';
 }
@@ -124,15 +124,15 @@
 .image1 {
   position: absolute;
   z-index: 1;
-  left: 850px;
+  left: 650px;
   top : 900px;
 }
 
 .image2 {
   position: absolute;
-  z-index: 1;
-  left: 500px;
-  top: 2100px;
+  z-index: 3;
+  left: 650px;
+  top: 2000px;
 }
 
 .titre1 {
@@ -143,7 +143,7 @@
   width: 600px;
   height: 100px;
   padding-left: 160px;
-  left: 850px;
+  left: 650px;
   top:318px;
   color: white;
   text-align: middle;
@@ -160,7 +160,7 @@
   width: 600px;
   height: 100px;
   padding-left: 170px;
-  left: 850px;
+  left: 650px;
   top:1419px;
   color: white;
   text-align: middle;
